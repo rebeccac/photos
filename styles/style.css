@@ -1,0 +1,96 @@
+/* GENERAL */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+/* WIDTH SETTINGS */
+
+header,
+footer,
+.container {
+	width: 100%;
+
+}
+
+
+/* HEADER */
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Julius Sans One', serif;
+	font-weight: 400;
+	color: #333;
+}
+
+h1::first-letter {
+	font-size: 1.025em;
+}
+
+
+
+/* ---------- FIXED FOOTER ---------- */
+
+footer.fixed {
+	position: fixed;
+	bottom: 0;
+	background-color: #191919;
+	width: 100%;
+	height: 10%;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+
+}
+
+footer.fixed p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #555;
+	padding-top: 15px;
+}
+
+/* ---------- END OF FIXED FOOTER ---------- */
+
+
+
+/* ---------- STICKY FOOTER ---------- */
+
+.container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -10%;
+}
+
+footer, .push {
+	height: 10%;
+}
+
+footer {
+	background-color: #121214;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #555;
+	padding-top: 15px;
+}
+
+/* ---------- END OF STICKY FOOTER ---------- */
