@@ -1,4 +1,4 @@
-<div class="dropdown-menu">
+<div class="desktop-nav">
 	<div id="hidden-menu" class="hidden-menu">
 		<nav>
 			<div id="menu">
@@ -58,9 +58,13 @@
 	</div>
 </div>
 
-
-<!-- <div class="mobile-nav">
+<div class="mobile-nav">
 	<nav id='mobnav'>
+	    <div id="pull">
+	        <div class="pullitem">
+	            <span aria-hidden="true" data-icon="n">&nbsp;&nbsp;Menu</span> <span class="screen-reader-text">Menu</span>
+	        </div>
+	    </div>
 	    <ul>
 	        <li class="has-sub">
 	            <a href='index.php'><span>Home</span></a>
@@ -81,10 +85,6 @@
 	            <a href=""><span>Contact</span></a>
 	        </li>
 	    </ul>
-	    <div id="pull">
-	        <div class="pullitem">
-	            <span aria-hidden="true" data-icon="n">&nbsp;&nbsp;Menu</span> <span class="screen-reader-text">Menu</span>
-	        </div>
-	    </div>
+	    
 	</nav>
-</div> -->
+</div>

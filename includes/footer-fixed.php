@@ -1,6 +1,6 @@
 		</div> <!-- main-content -->
 		<footer class="fixed">
-			<p>&copy; Simon Cordingley 2013</p>
+			<?php include('footer-content.php'); ?>
 		</footer>
 		<script src="http://rebeccacordingley.com/photography/scripts/script.js"></script>
 	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
