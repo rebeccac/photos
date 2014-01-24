@@ -1,4 +1,4 @@
-			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<meta name="viewport" content="width=device-width, initial-scale=1, content=minimal-ui">
 			
 			<link rel="stylesheet" href="/photos/styles/reset.css">
 			<!-- <link rel="stylesheet" href="http://rebeccacordingley.com/photography/styles/style.css" >  <!-- PRODUCTION --> 

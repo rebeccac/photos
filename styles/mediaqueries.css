@@ -140,8 +140,20 @@
 
 /* FOOTER */
 
-}
+	.social-media {
+		padding-top: 0;
+	}
 
+	.social-icon {
+		padding: 2px 5px 3px 5px;
+	}
+
+	.copyright {
+		padding-top: 2px;
+	}
+
+}
+/* Portrait mode OR smart phone in landscape mode */
 @media (orientation: portrait), (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
 	#mobnav,
@@ -160,8 +172,14 @@
 	}
 }	
 
+
+/* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
+	.title-mobile {
+		top: 60%;
+	}
+
 	#mobnav ul {
 		width: 100%;
 		display: block;
@@ -176,11 +194,15 @@
 		border-left: 1px solid #141414;;
 	}
 
+	footer.fixed {
+		height: 15%;
+	}
+
 	
 
 }
 
-
+/* Landscape mode larger than smart phone */
 @media (orientation:landscape) and (min-width: 768px){
 	/* GENERAL */
 
@@ -337,6 +359,23 @@
 	    height: auto;
 
 	}
+
+
+	/* FOOTER */
+
+	.social-media {
+		padding-top: 5px;
+	}
+
+	.social-icon {
+		padding: 5px;
+	}
+
+	.copyright {
+		padding-top: 5px;
+	}
+
+
 }
 
 /*@media only screen and (orientation:landscape) , screen and (max-width: 849px), screen and (max-device-width: 849px){
