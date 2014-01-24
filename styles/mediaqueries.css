@@ -219,7 +219,7 @@
 
 	h1 {
 		text-align: right;
-		font-size: 2em;
+		/*font-size: 2em;*/
 		padding: 30px 10px 0 0;
 	}
 	h1::first-letter {
@@ -366,5 +366,17 @@
 	}
 }
 
+
+@media (orientation: landscape) and (max-width: 924px) {
+	h1 {
+		font-size: 1.7em;
+	}
+}
+
+@media (orientation: landscape) and (min-width: 925px) {
+	h1 {
+		font-size: 2em;
+	}
+}
 
 
