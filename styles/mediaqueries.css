@@ -1,14 +1,19 @@
+/* Portrait mode */
+@media (orientation: portrait) {
+		body {
+			background: url(../images/frontpage/bg3.jpg) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		  background-color: #121214;
+		}
+	}	
+
+
+/* Portrait mode OR smart phone in landscape mode */
 @media (orientation: portrait), (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	/* GENERAL */
-
-	html { 
-	  background: url(../images/frontpage/bg3.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  background-color: #121214;
-	}
 
 	html, body {
 		width: 100%;
@@ -40,8 +45,6 @@
 	.landscape-main-content {
 		display: none;
 	}
-
-
 
 	/* MOBILE NAVIGATION */
 	
@@ -98,7 +101,8 @@
 		text-decoration:none;
 		line-height:1;
 		font-family: 'Quicksand', sans-serif;
-		position:relative
+		position:relative;
+		display: block;
 	}
 
 	#mobnav a {
@@ -117,12 +121,14 @@
 		padding-right:40px;
 		background:rgba(212, 212, 212, 0.1);
 		border-bottom: 1px solid #141414;
+		display: block;
 	}
 
 	#mobnav > ul > li > a > span {
 		padding:7px;
-*/		font-size:1em;
-		font-weight:400
+		font-size:1em;
+		font-weight:400;
+		display: block;
 	}
 
 	#mobnav > ul > li > a:hover {
@@ -153,25 +159,6 @@
 	}
 
 }
-/* Portrait mode OR smart phone in landscape mode */
-@media (orientation: portrait), (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
-	
-	#mobnav,
-	#mobnav ul,
-	#mobnav li,
-	#mobnav a {
-		display: block;
-	}
-
-	#mobnav > ul > li > a {
-		display: block;
-	}
-
-	#mobnav > ul > li > a > span {
-		display: block;
-	}
-}	
-
 
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
@@ -190,6 +177,10 @@
 		float: left;
 	}
 
+	#mobnav > ul > li > a {
+		background:rgba(212, 212, 212, 0.4);
+	}
+
 	#mobnav > ul > li > a:nth-child(2n+1) {
 		border-left: 1px solid #141414;;
 	}
@@ -198,9 +189,8 @@
 		height: 15%;
 	}
 
-	
-
 }
+
 
 /* Landscape mode larger than smart phone */
 @media (orientation:landscape) and (min-width: 768px){
@@ -213,14 +203,14 @@
 	html, body {
 	width: 100%;
 	height: 100%;
-	background-color: #121214;
 }
 
 	/* HEADER */
 
 	header {
-		text-align: left;
+		/*text-align: left;*/
 		height: 10%;
+		background-color: #121214;
 	}
 	
 	.title-desktop {
@@ -374,22 +364,7 @@
 	.copyright {
 		padding-top: 5px;
 	}
-
-
 }
-
-/*@media only screen and (orientation:landscape) , screen and (max-width: 849px), screen and (max-device-width: 849px){
-	h1 {
-		font-size: 1.7em;
-	}
-}*/
-
-/*@media only screen and (orientation:landscape) and (min-width: 480px) and (max-width: 767px) {
-    
-    body {
-		background-color: #ff0000;
-    }
-}*/
 
 
 
