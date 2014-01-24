@@ -18,10 +18,10 @@ include($root.'includes/dtd.php');
 		}
 	}
  </style>
- 	<?php include($root.'includes/head.php');
-	?>
-	<?php include($root.'includes/nav.php');
-		  include($root.'includes/header.php');
-	?>
-	<?php include($root.'includes/footer-fixed.php'); ?>
+ <?php 
+include($root.'includes/head.php');
+include($root.'includes/nav.php');
+include($root.'includes/header.php');
+include($root.'includes/footer-fixed.php'); 
+?>
 
