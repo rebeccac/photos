@@ -155,7 +155,8 @@ header {
 h1 {
 	font-family: 'Julius Sans One', serif;
 	font-weight: 400;
-	color: #333;
+	color: #b2aea5;
+
 }
 
 h1::first-letter {
@@ -170,15 +171,17 @@ h1::first-letter {
 }
 
 .social-icon {
-	color: #b0b0b0;
-/*	padding: 5px;
-*/	font-size: 1.2em;
+/*	color: #b0b0b0;*/
+	color: #b2aea5;
+/*	padding: 5px;*/
+	font-size: 1.2em;
 }
 
 .copyright {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1em;
-	color: #b0b0b0;
+	/*color: #b0b0b0;*/
+	color: #b2aea5;
 	text-align: center;
 /*	padding-top: 5px;
 */}

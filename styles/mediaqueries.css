@@ -23,6 +23,22 @@
 	#fittext-title {
 		padding-top: 5px;
 		width: 100%;
+		color: #333;
+
+	}
+
+	#fittext-title-top {
+		padding: 5px 10px 0 0;
+		color: #b2aea5;
+
+	}
+
+	.title-mobile {
+		display: inline-block;
+		width: 75%;
+		max-width: 75%;
+		float: right;
+		text-align: right;
 	}
 
 	.title-desktop {
@@ -61,8 +77,9 @@
 		font-weight:600;
 		text-decoration:none;
 		font-family: 'Quicksand', sans-serif;
-		color: #333;
-		color: #b0b0b0;
+		/*color: #333;*/
+/*		color: #b0b0b0;*/
+		color: #b2aea5;
 	}
 
 	.pullitem {
@@ -212,7 +229,8 @@
 		font-size: 1.025em;
 	}
 
-	.title-mobile-front {
+	.title-mobile-front,
+	.title-mobile {
 		display: none;
 	}
 

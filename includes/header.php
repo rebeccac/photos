@@ -3,8 +3,8 @@
 			Simon Cordingley Photography
 	</h1></div>
 
-</header>
-<!-- <div class="title-mobile">
-	<h1 id="fittext-title">Simon Cordingley</h1>
+<div class="title-mobile">
+	<h1 id="fittext-title-top">Simon Cordingley Photography</h1>
 </div>
- -->
+
+</header>
