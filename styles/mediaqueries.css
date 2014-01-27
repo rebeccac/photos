@@ -1,16 +1,3 @@
-/* Portrait mode */
-@media (orientation: portrait) {
-		body {
-			background: url(../images/frontpage/bg3.jpg) no-repeat center center fixed; 
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-		  background-color: #121214;
-		}
-	}	
-
-
 /* Portrait mode OR smart phone in landscape mode */
 @media (orientation: portrait), (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	/* GENERAL */
@@ -24,14 +11,14 @@
 
 	header {
 		height: 3em;
-		background-color: #121214;
 	}
 
-	.title-mobile {
+	.title-mobile-front {
 		position: absolute;
 		top: 70%;
 		width: 100%;
 		text-align: center;
+		background-color: none;
 	}
 	#fittext-title {
 		padding-top: 5px;
@@ -61,11 +48,12 @@
 
 	#pull {
 		height:3em;
+		line-height:3em;
 		display:block;
 		margin-bottom:0;
 		padding-left:10px;
 		border:0;
-		position:relative
+		position:relative;
 	}
 
 	.pullitem, 
@@ -78,8 +66,7 @@
 	}
 
 	.pullitem {
-		line-height:3em;
-		font-size: 1em;
+		font-size: 1.7em;
 	}
 
 	#pull .left {
@@ -119,7 +106,7 @@
 		color: #333;
 		font-size: 1.2em;
 		padding-right:40px;
-		background:rgba(212, 212, 212, 0.1);
+		background:rgba(212, 212, 212, 0.7); /* 0.1 */
 		border-bottom: 1px solid #141414;
 		display: block;
 	}
@@ -163,7 +150,7 @@
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
-	.title-mobile {
+	.title-mobile-front {
 		top: 60%;
 	}
 
@@ -178,7 +165,7 @@
 	}
 
 	#mobnav > ul > li > a {
-		background:rgba(212, 212, 212, 0.4);
+		background:rgba(212, 212, 212, 0.7); /* 0.4 */
 	}
 
 	#mobnav > ul > li > a:nth-child(2n+1) {
@@ -208,25 +195,24 @@
 	/* HEADER */
 
 	header {
-		/*text-align: left;*/
 		height: 10%;
-		background-color: #121214;
+		min-height: 65px;
 	}
 	
 	.title-desktop {
 		display: inline;
+		background-color: #191919;
 	}
 
 	h1 {
 		text-align: right;
-		/*font-size: 2em;*/
 		padding: 30px 10px 0 0;
 	}
 	h1::first-letter {
 		font-size: 1.025em;
 	}
 
-	.title-mobile {
+	.title-mobile-front {
 		display: none;
 	}
 

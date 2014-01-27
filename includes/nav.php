@@ -61,7 +61,7 @@
 <div class="mobile-nav">
 	<nav id='mobnav'>
 	    <div id="pull">
-	        <div class="pullitem">&#9776; Menu
+	        <div class="pullitem">&#9776; <!-- Menu -->
 	            <!-- <span aria-hidden="true" data-icon="n">&nbsp;&nbsp;Menu</span> <span class="screen-reader-text">Menu</span> -->
 	        </div>
 	    </div>

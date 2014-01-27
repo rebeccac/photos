@@ -21,7 +21,8 @@ a {
 header,
 footer,
 .container,
-.main-content {
+.main-content,
+.container {
 	width: 100%;
 
 }
@@ -31,6 +32,10 @@ footer,
 
 .main-content {
 	position: absolute;
+}
+
+.container {
+	background-color: #121214;
 }
 
 /* ICON FONTS */
@@ -143,6 +148,8 @@ header {
 	width: 100%;
 	padding: 0;
 	margin: 0;
+	background-color: #191919;
+
 }
 
 h1 {
@@ -184,6 +191,7 @@ h1::first-letter {
 		background-color: #191919;
 		width: 100%;
 		height: 10%;
+		min-height: 58px;
 		text-align: center;
 		margin: 0 auto;
 		display: block;
@@ -204,14 +212,19 @@ h1::first-letter {
 		height: auto !important;
 		height: 100%;
 		margin: 0 auto -10%;
+		background-color: #;
 	}
 
 	footer, .push {
 		height: 10%;
 	}
 
-	footer {
+	.push {
 		background-color: #121214;
+	}
+
+	footer {
+		background-color: #191919;
 		text-align: center;
 		margin: 0 auto;
 		display: block;
