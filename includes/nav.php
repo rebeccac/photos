@@ -82,7 +82,7 @@
 	            <a href="#"><span>Creative Commons</span></a>
 	        </li>
 	        <li class="has-sub">
-	            <a href=""><span>Contact</span></a>
+	            <a href="contact.php"><span>Contact</span></a>
 	        </li>
 	    </ul>
 	    

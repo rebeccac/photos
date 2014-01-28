@@ -11,6 +11,7 @@
 
 	header {
 		height: 3em;
+		background-color: rgba(25, 25, 25, 0.9);
 	}
 
 	.title-mobile-front {
@@ -30,7 +31,6 @@
 	#fittext-title-top {
 		padding: 5px 10px 0 0;
 		color: #b2aea5;
-
 	}
 
 	.title-mobile {
@@ -47,6 +47,10 @@
 
 	.landscape-main-content {
 		display: none;
+	}
+
+	h2 {
+		margin-top: 70px;
 	}
 
 	/* MOBILE NAVIGATION */
@@ -77,8 +81,6 @@
 		font-weight:600;
 		text-decoration:none;
 		font-family: 'Quicksand', sans-serif;
-		/*color: #333;*/
-/*		color: #b0b0b0;*/
 		color: #b2aea5;
 	}
 
@@ -91,6 +93,7 @@
 		padding-right:10px;
 		font-size:18px;
 	}
+
 
 	#mobnav,
 	#mobnav ul,
@@ -105,7 +108,7 @@
 		text-decoration:none;
 		line-height:1;
 		font-family: 'Quicksand', sans-serif;
-		position:relative;
+		/*position:relative;*/
 		display: block;
 	}
 
@@ -123,7 +126,7 @@
 		color: #333;
 		font-size: 1.2em;
 		padding-right:40px;
-		background:rgba(212, 212, 212, 0.7); /* 0.1 */
+		background:rgba(212, 212, 212, 0.3); /* 0.1 */
 		border-bottom: 1px solid #141414;
 		display: block;
 	}
@@ -148,6 +151,34 @@
 	}
 
 
+/* FORM */
+
+.contact-container {
+	width: 90%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 90%;
+	
+}
+
+.contact-form {
+	width: 95%;
+	margin: 0 auto;
+	display: block;
+}
+
+.follow {
+	width: 90%;
+	margin: 25px auto;
+	display: block;
+}
+
+
+
+
 /* FOOTER */
 
 	.social-media {
@@ -162,15 +193,27 @@
 		padding-top: 2px;
 	}
 
+	footer.fixed {
+		background-color: rgba(25, 25, 25, 0.9);
+
+	}
+
 }
 
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
+	header {
+		background-color: rgba(25, 25, 25, 0.7);
+	}
+
 	.title-mobile-front {
 		top: 60%;
 	}
-
+	
+	h2 {
+		margin-top: 70px;
+	}
 	#mobnav ul {
 		width: 100%;
 		display: block;
@@ -191,7 +234,10 @@
 
 	footer.fixed {
 		height: 15%;
+		background-color: rgba(25, 25, 25, 0.7);
 	}
+
+	footer.
 
 }
 
@@ -214,6 +260,7 @@
 	header {
 		height: 10%;
 		min-height: 65px;
+		background-color: rgba(25, 25, 25, 0.7);
 	}
 	
 	.title-desktop {
@@ -355,6 +402,32 @@
 	}
 
 
+	/* FORM */
+
+.contact-container {
+	width: 80%;
+}
+
+.contact-form {
+	display: inline-block;
+	width: 66%;
+	height: auto;
+	float: left;
+}
+
+.follow {
+	display: inline-block;
+	width: 32%;
+	float: left;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	width: 75%;
+	background-color: #bbb;
+}
+
 	/* FOOTER */
 
 	.social-media {
@@ -367,6 +440,11 @@
 
 	.copyright {
 		padding-top: 5px;
+	}
+
+	footer.fixed {
+		background-color: rgba(25, 25, 25, 0.7);
+
 	}
 }
 

@@ -35,7 +35,10 @@ footer,
 }
 
 .container {
-	background-color: #121214;
+	/*background-color: #121214;*/
+	height: auto;
+	background: url('../images/dark_wall.png');
+	/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 }
 
 /* ICON FONTS */
@@ -148,14 +151,15 @@ header {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background-color: #191919;
+	/*background-color: rgba(25, 25, 25, 0.7);*/
 
 }
 
 h1 {
 	font-family: 'Julius Sans One', serif;
 	font-weight: 400;
-	color: #b2aea5;
+	/*color: #b2aea5;*/
+	color: #333;
 
 }
 
@@ -163,27 +167,156 @@ h1::first-letter {
 	font-size: 1.025em;
 }
 
+h2 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2em;
+	color: #636363;
+	/*margin-top: 70px;*/
+}
+
+
+
+/* FORM */
+
+.contact-container {
+	margin: 0 auto;
+	height: auto;
+	margin-top: 20px;
+}
+
+form {
+	margin-top: 20px;
+}
+form span {
+	vertical-align: middle;
+    display: block;
+    width: 100%;
+}
+
+legend,
+label {
+	font-family: 'Quicksand', sans-serif;
+	color: #636363;
+}
+label {
+	float: left;
+	width: 160px;
+}
+
+legend {
+	font-size: 1.3em;
+	font-weight: 400;
+}
+
+fieldset {
+	width: 100%;  
+    margin-bottom: 15px;
+    padding: 5px;
+    /*background-color: rgba(25,25,25,0.3);*/
+}
+
+input[type=text],
+input[type=email],
+textarea {
+	/*width: 75%;*/
+	background-color: #bbb;
+}
+
+input[type=submit] {
+	width: 200px;
+	background-color: rgba(25,25,25,1);
+	padding:10px;
+	color: #bbb;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1em;
+	border: 1px solid #bbb;
+	margin: 0 auto;
+	display: block;
+}
+
+
+li.details {
+	padding: 10px 0;
+}
+
+.errors {
+    display:block;
+    color: #ff0000;
+    font-weight: 300;
+}
+
+.required {
+	color: #ff6347;
+	display: inline;
+}
+
+.icons {
+	width: 230px;
+	margin: 0 auto;
+	display: block;
+}
+
+.s-i-f,
+.s-i-t,
+.s-i-r,
+.s-i-g-p,
+.s-i-500 {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 5px;
+}
+
+.s-i-f { /* facebook icon */
+    background-color: #3b5998;
+}
+
+.s-i-t { /*twitter icon*/
+    background-color: #00aced;
+}
+
+.s-i-r { /* rss icon */
+	background-color: #ff8300;
+}
+
+.s-i-500 { /* 500px icon */
+	background-color: #444;
+}
+
+.s-i-g-p { /* google plus icon */
+	background-color: #d14836;
+}
+
 /* FOOTER */
 
+footer {
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	color: #555;
+	padding-top: 15px;
+}
+
 .social-media {
-/*	padding-top: 5px;
-*/	text-align: center;
+	text-align: center;
 }
 
 .social-icon {
-/*	color: #b0b0b0;*/
 	color: #b2aea5;
-/*	padding: 5px;*/
 	font-size: 1.2em;
 }
 
 .copyright {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1em;
-	/*color: #b0b0b0;*/
 	color: #b2aea5;
 	text-align: center;
-/*	padding-top: 5px;
 */}
 
 	/* FIXED FOOTER */
@@ -191,14 +324,13 @@ h1::first-letter {
 	footer.fixed {
 		position: fixed;
 		bottom: 0;
-		background-color: #191919;
+/*		background-color: rgba(25, 25, 25, 0.7);*/		
 		width: 100%;
 		height: 10%;
 		min-height: 58px;
 		text-align: center;
 		margin: 0 auto;
 		display: block;
-
 	}
 
 	footer.fixed p {
@@ -222,22 +354,17 @@ h1::first-letter {
 		height: 10%;
 	}
 
+	footer.sticky {
+		background-color: rgba(25, 25, 25, 1);
+	}
+
 	.push {
-		background-color: #121214;
-	}
+		/*background-color: #121214;*/
+		background: url('../images/dark_wall.png');
+		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 
-	footer {
-		background-color: #191919;
-		text-align: center;
-		margin: 0 auto;
-		display: block;
 	}
 
 
-	footer p {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 1em;
-		color: #555;
-		padding-top: 15px;
-	}
+
 

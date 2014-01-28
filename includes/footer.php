@@ -1,6 +1,6 @@
 			<div class="push"></div>
 			</div> <!-- container -->
-			<footer>
+			<footer class="sticky">
 				<?php include('footer-content.php'); ?>
 			</footer>
 			<script src="http://rebeccacordingley.com/photography/scripts/script.js"></script>

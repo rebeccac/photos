@@ -134,4 +134,30 @@ function displayThumbnail($photo, $width) {
 	echo '<img src="'.$photo.'" width = "'.$width.'px">';
 }
 
+
+function get_user_data($userdata) {
+
+	   $email_pattern = "/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/";
+
+	   $errors = array();
+
+	if(isset($userdata['submitBtn'])) {
+		$_SESSION['contact']['name'] = htmlentities($userdata['name']);
+        if (empty($_SESSION['contact']['name'])) {
+            $errors['name']="Please enter your name";
+        }
+
+        $_SESSION['contact']['email'] = htmlentities($userdata['email']);
+        if (empty($_SESSION['contact']['email']) || !preg_match($email_pattern, $userdata['email'])) {
+            $errors['email']="Please enter a valid e-mail address";
+        }
+
+        $_SESSION['contact']['comments'] = htmlentities($userdata['comments']);
+        if (empty($_SESSION['contact']['comments'])) {
+            $errors['comments']='Please enter some comments';
+        }
+	}
+	return $errors;
+}
+
 ?>
