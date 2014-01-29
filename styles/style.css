@@ -137,7 +137,6 @@ footer,
 	color: #ff9600;
 }
 .icon-mail:hover {
-	/*color: #b2aea5;*/
 	color: #39b54a;
 }
 
@@ -151,14 +150,12 @@ header {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	/*background-color: rgba(25, 25, 25, 0.7);*/
-
+	display: block;
 }
 
 h1 {
 	font-family: 'Julius Sans One', serif;
 	font-weight: 400;
-	/*color: #b2aea5;*/
 	color: #333;
 
 }
@@ -171,7 +168,6 @@ h2 {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 2em;
 	color: #636363;
-	/*margin-top: 70px;*/
 }
 
 
@@ -181,7 +177,9 @@ h2 {
 .contact-container {
 	margin: 0 auto;
 	height: auto;
-	margin-top: 20px;
+	padding-top: 20px;
+	display: block;
+
 }
 
 form {
@@ -218,13 +216,15 @@ fieldset {
 input[type=text],
 input[type=email],
 textarea {
-	/*width: 75%;*/
+	padding: 3px;
 	background-color: #bbb;
+	font-size: 1em;
+	color: #333;
 }
 
 input[type=submit] {
 	width: 200px;
-	background-color: rgba(25,25,25,1);
+	background: #111;
 	padding:10px;
 	color: #bbb;
 	font-family: 'Quicksand', sans-serif;
@@ -317,14 +317,15 @@ footer p {
 	font-size: 1em;
 	color: #b2aea5;
 	text-align: center;
-*/}
+	background-color: rgba(25, 25, 25, 1);
+
+}
 
 	/* FIXED FOOTER */
 
 	footer.fixed {
 		position: fixed;
 		bottom: 0;
-/*		background-color: rgba(25, 25, 25, 0.7);*/		
 		width: 100%;
 		height: 10%;
 		min-height: 58px;
@@ -345,7 +346,7 @@ footer p {
 	.container {
 		min-height: 100%;
 		height: auto !important;
-		height: 100%;
+		height: auto;
 		margin: 0 auto -10%;
 		background-color: #;
 	}
@@ -359,7 +360,7 @@ footer p {
 	}
 
 	.push {
-		/*background-color: #121214;*/
+		background-color: #121214;
 		background: url('../images/dark_wall.png');
 		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 

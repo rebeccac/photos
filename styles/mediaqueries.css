@@ -7,7 +7,19 @@
 		height: 100%;
 	}
 
+	.container {
+		/*background-color: #121214;*/
+		height: auto;
+		background: url('../images/dark_wall.png');
+		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
+	}
+
 	/* HEADER */
+
+	.heading {
+		display: block;
+		height: 3em;
+	}
 
 	header {
 		height: 3em;
@@ -50,7 +62,7 @@
 	}
 
 	h2 {
-		margin-top: 70px;
+		margin-top: 30px;
 	}
 
 	/* MOBILE NAVIGATION */
@@ -108,7 +120,6 @@
 		text-decoration:none;
 		line-height:1;
 		font-family: 'Quicksand', sans-serif;
-		/*position:relative;*/
 		display: block;
 	}
 
@@ -126,7 +137,7 @@
 		color: #333;
 		font-size: 1.2em;
 		padding-right:40px;
-		background:rgba(212, 212, 212, 0.3); /* 0.1 */
+		background:rgba(212, 212, 212, 0.8); /* 0.1 */
 		border-bottom: 1px solid #141414;
 		display: block;
 	}
@@ -154,7 +165,8 @@
 /* FORM */
 
 .contact-container {
-	width: 90%;
+	width: 98%;
+
 }
 
 input[type=text],
@@ -168,12 +180,19 @@ textarea {
 	width: 95%;
 	margin: 0 auto;
 	display: block;
+	height: auto;
+	padding-bottom: 15%;
+}
+
+.follow-mobile {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	/*display: block;*/
 }
 
 .follow {
-	width: 90%;
-	margin: 25px auto;
-	display: block;
+	display: none;
 }
 
 
@@ -203,6 +222,19 @@ textarea {
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
+	.container {
+		/*background-color: #121214;*/
+		height: auto;
+		background: url('../images/dark_wall.png');
+		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
+	}
+	
+	.heading {
+		display: block;
+		height: 10%;
+		min-height: 65px;
+	}
+
 	header {
 		background-color: rgba(25, 25, 25, 0.7);
 	}
@@ -212,7 +244,7 @@ textarea {
 	}
 	
 	h2 {
-		margin-top: 70px;
+		margin-top: 30px;
 	}
 	#mobnav ul {
 		width: 100%;
@@ -225,11 +257,19 @@ textarea {
 	}
 
 	#mobnav > ul > li > a {
-		background:rgba(212, 212, 212, 0.7); /* 0.4 */
+		background:rgba(212, 212, 212, 0.8); /* 0.4 */
 	}
 
 	#mobnav > ul > li > a:nth-child(2n+1) {
 		border-left: 1px solid #141414;;
+	}
+
+	.follow {
+		display: none;
+	}
+
+	.follow-mobile {
+		display: block;
 	}
 
 	footer.fixed {
@@ -237,7 +277,6 @@ textarea {
 		background-color: rgba(25, 25, 25, 0.7);
 	}
 
-	footer.
 
 }
 
@@ -251,11 +290,24 @@ textarea {
 	}
 
 	html, body {
-	width: 100%;
-	height: 100%;
-}
+		width: 100%;
+		height: 100%;
+	}
+
+	.container {
+		/*background-color: #121214;*/
+		height: auto;
+		background: url('../images/dark_wall.png');
+		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
+	}
 
 	/* HEADER */
+
+	.heading {
+		display: block;
+		height: 10%;
+		min-height: 65px;
+	}
 
 	header {
 		height: 10%;
@@ -413,12 +465,17 @@ textarea {
 	width: 66%;
 	height: auto;
 	float: left;
+	padding-bottom: 15%;
 }
 
 .follow {
 	display: inline-block;
 	width: 32%;
 	float: left;
+}
+
+.follow-mobile {
+	display: none;
 }
 
 input[type=text],

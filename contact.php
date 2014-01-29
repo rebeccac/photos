@@ -7,11 +7,18 @@ include($root.'includes/dtd.php');
 <?php
 include($root.'includes/head.php');
 ?>
+
+
 <div class="container">
+<div class="heading">
 <?php
 include($root.'includes/nav.php');
-include($root.'includes/header.php');
-include($root.'includes/main-content.php');
+include($root.'includes/header.php');?>
+</div> <!-- .heading -->
+<div class="clear"></div>
+<?php 
+
+// include($root.'includes/main-content.php');
 
 
 
@@ -44,6 +51,17 @@ $errors = get_user_data($_POST);
   } 
 } ?>
 <div class="contact-container">
+  <div class="follow-mobile">
+		<div class="icons">
+			<div class="s-i-f"><a href="http://www.facebook.com/SimonCordingleyPhotography"><img src="images/social-icons/f-32.png"></a></div>
+			<div class="s-i-t"><a href="http://www.twitter.com"><img src="images/social-icons/twitter-32.png"></a></div>
+			<div class="s-i-500"><a href="http://www.500px.com"><img src="images/social-icons/500-32.png"></a></div>
+			<div class="s-i-r"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/rss-32.png"></a></div>
+			<div class="s-i-g-p"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/googleplus-32.png"></a></div>
+		</div>
+  	</div>
+  <div class="clear"></div>
+
   <div class="contact-form">
     <h2>Send an E-mail</h2>
     <div class="clear"></div>
@@ -122,7 +140,7 @@ $errors = get_user_data($_POST);
 
 
 
-</div> <!-- .main-content -->
+<!-- </div> .main-content -->
 <div class="push"></div>
 </div>
 <?php
