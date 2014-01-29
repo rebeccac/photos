@@ -51,20 +51,23 @@ $errors = get_user_data($_POST);
   } 
 } ?>
 <div class="contact-container">
+  
   <div class="follow-mobile">
 		<div class="icons">
-			<div class="s-i-f"><a href="http://www.facebook.com/SimonCordingleyPhotography"><img src="images/social-icons/f-32.png"></a></div>
-			<div class="s-i-t"><a href="http://www.twitter.com"><img src="images/social-icons/twitter-32.png"></a></div>
-			<div class="s-i-500"><a href="http://www.500px.com"><img src="images/social-icons/500-32.png"></a></div>
-			<div class="s-i-r"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/rss-32.png"></a></div>
-			<div class="s-i-g-p"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/googleplus-32.png"></a></div>
+			<div class="s-i-f"><a href="http://www.facebook.com/SimonCordingleyPhotography" title="Simon Cordingley Photography on Facebook"><img src="images/social-icons/f-32.png" alt="Simon Cordingley Photography on Facebook" width="32px" height="32px"></a></div>
+			<div class="s-i-t"><a href="http://www.twitter.com" title="Simon Cordingley on Twitter"><img src="images/social-icons/twitter-32.png" alt="Simon Cordingley Photography on Twitter" width="32px" height="32px"></a></div>
+			<div class="s-i-500"><a href="http://www.500px.com" title="Simon Cordingley Photography on 500px"><img src="images/social-icons/500-32.png" alt="Simon Cordingley Photography on 500px" width="32px" height="32px"></a></div>
+			<div class="s-i-r"><a href="http://www.simoncordingleyphotography.com" title="RSS Feed"><img src="images/social-icons/rss-32.png" alt="RSS Feed" width="32px" height="32px"></a></div>
+			<div class="s-i-g-p"><a href="http://www.simoncordingleyphotography.com" title="Simon Cordingley on Google+"><img src="images/social-icons/googleplus-32.png" alt="Simon Cordingley on Google+" width="32px" height="32px"></a></div>
 		</div>
   	</div>
+
   <div class="clear"></div>
 
   <div class="contact-form">
     <h2>Send an E-mail</h2>
     <div class="clear"></div>
+
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" id="contact" action=autocomplete="on">
       <fieldset>
         <legend>Your details:</legend>
@@ -117,34 +120,23 @@ $errors = get_user_data($_POST);
       </fieldset>
       <br>
       
-      
         <input type="submit" name="submitBtn" id="submitBtn" value="Submit">
      
-
     </form>
   </div> <!-- .contact-form -->
+  
   <div class="follow">
 		<div class="icons">
-			<div class="s-i-f"><a href="http://www.facebook.com/SimonCordingleyPhotography"><img src="images/social-icons/f-32.png"></a></div>
-			<div class="s-i-t"><a href="http://www.twitter.com"><img src="images/social-icons/twitter-32.png"></a></div>
-			<div class="s-i-500"><a href="http://www.500px.com"><img src="images/social-icons/500-32.png"></a></div>
-			<div class="s-i-r"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/rss-32.png"></a></div>
-			<div class="s-i-g-p"><a href="http://www.simoncordingleyphotography.com"><img src="images/social-icons/googleplus-32.png"></a></div>
+			<div class="s-i-f"><a href="http://www.facebook.com/SimonCordingleyPhotography" title="Simon Cordingley Photography on Facebook"><img src="images/social-icons/f-32.png" alt="Simon Cordingley Photography on Facebook" width="32px" height="32px"></a></div>
+			<div class="s-i-t"><a href="http://www.twitter.com" title="Simon Cordingley on Twitter"><img src="images/social-icons/twitter-32.png" alt="Simon Cordingley Photography on Twitter" width="32px" height="32px"></a></div>
+			<div class="s-i-500"><a href="http://www.500px.com" title="Simon Cordingley Photography on 500px"><img src="images/social-icons/500-32.png" alt="Simon Cordingley Photography on 500px" width="32px" height="32px"></a></div>
+			<div class="s-i-r"><a href="http://www.simoncordingleyphotography.com" title="RSS Feed"><img src="images/social-icons/rss-32.png" alt="RSS Feed" width="32px" height="32px"></a></div>
+			<div class="s-i-g-p"><a href="http://www.simoncordingleyphotography.com" title="Simon Cordingley on Google+"><img src="images/social-icons/googleplus-32.png" alt="Simon Cordingley on Google+" width="32px" height="32px"></a></div>
 		</div>
   	</div>
   <div class="clear"></div>
 </div>
 
-
-
-
-
-
-<!-- </div> .main-content -->
 <div class="push"></div>
 </div>
-<?php
-
-include($root.'includes/footer.php');
-
- ?>
+<?php include($root.'includes/footer.php'); ?>

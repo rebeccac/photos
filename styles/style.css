@@ -208,15 +208,13 @@ legend {
 
 fieldset {
 	width: 100%;  
-    margin-bottom: 15px;
-    padding: 5px;
-    /*background-color: rgba(25,25,25,0.3);*/
+    margin: 5px 5px 15px 5px;
 }
 
 input[type=text],
 input[type=email],
 textarea {
-	padding: 3px;
+	padding: 3px 0;
 	background-color: #bbb;
 	font-size: 1em;
 	color: #333;
@@ -234,6 +232,18 @@ input[type=submit] {
 	display: block;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #444;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #444;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #444;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #444;
+}
 
 li.details {
 	padding: 10px 0;
@@ -317,7 +327,7 @@ footer p {
 	font-size: 1em;
 	color: #b2aea5;
 	text-align: center;
-	background-color: rgba(25, 25, 25, 1);
+	/*background-color: rgba(25, 25, 25, 1);*/
 
 }
 

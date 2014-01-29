@@ -272,6 +272,11 @@ textarea {
 		display: block;
 	}
 
+	footer.sticky {
+		height: 15%;
+		background-color: rgba(25, 25, 25, 1);
+	}
+
 	footer.fixed {
 		height: 15%;
 		background-color: rgba(25, 25, 25, 0.7);
@@ -421,8 +426,6 @@ textarea {
 	}
 
 
-	
-
 	.main-content {
 		top: 10%;
 		height: 80%;
@@ -458,11 +461,12 @@ textarea {
 
 .contact-container {
 	width: 80%;
+	display: table;
 }
 
 .contact-form {
 	display: inline-block;
-	width: 66%;
+ 	width: 66%;
 	height: auto;
 	float: left;
 	padding-bottom: 15%;
@@ -472,6 +476,8 @@ textarea {
 	display: inline-block;
 	width: 32%;
 	float: left;
+	position: absolute;
+	top: 50%;
 }
 
 .follow-mobile {
