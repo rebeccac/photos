@@ -1,20 +1,75 @@
+/* Show 2 thumbnails on About Simon page on screens > 479px in portrait orientation */ 
+@media (orientation: portrait) and (min-width: 480px) {
+	.thumbnail-1,
+	.thumbnail-2 {
+		padding: 4px;
+		display: inline-block;
+		float: left;
+		width: 48%;
+		height: auto;
+	}
+
+	.thumbnail-3 {
+		display: none;
+	}
+}
+
+/* Show 1 thumbnail on About Simon page on screens < 479px in portrait orientation */ 
+@media (orientation: portrait) and (max-width: 479px) {
+	.thumbnail-1 {
+		padding: 2%;
+		display: block;
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.thumbnail-2,
+	.thumbnail-3 {
+		display: none;
+	}
+}
+
+
 /* Portrait mode OR smart phone in landscape mode */
 @media (orientation: portrait), (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
-	/* GENERAL */
+/* GENERAL */
 
 	html, body {
 		width: 100%;
 		height: 100%;
 	}
 
+/* LAYOUT */
+
 	.container {
-		/*background-color: #121214;*/
 		height: auto;
-		background: url('../images/dark_wall.png');
-		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 	}
 
-	/* HEADER */
+	.content {
+		width: 98%;
+
+	}
+	.column-a {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		height: auto;
+		padding-bottom: 15%;
+	}
+
+	.column-b-mobile {
+		width: 100%;
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+	.column-b {
+		display: none;
+	}
+
+	
+/* HEADER */
 
 	.heading {
 		display: block;
@@ -65,7 +120,7 @@
 		margin-top: 30px;
 	}
 
-	/* MOBILE NAVIGATION */
+/* MOBILE NAVIGATION */
 	
 	.desktop-nav {
 		display: none;
@@ -162,42 +217,6 @@
 	}
 
 
-/* FORM */
-
-.contact-container {
-	width: 98%;
-
-}
-
-input[type=text],
-input[type=email],
-textarea {
-	width: 90%;
-	
-}
-
-.contact-form {
-	width: 95%;
-	margin: 0 auto;
-	display: block;
-	height: auto;
-	padding-bottom: 15%;
-}
-
-.follow-mobile {
-	width: 100%;
-	margin: 0 auto;
-	display: inline-block;
-	/*display: block;*/
-}
-
-.follow {
-	display: none;
-}
-
-
-
-
 /* FOOTER */
 
 	.social-media {
@@ -214,21 +233,49 @@ textarea {
 
 	footer.fixed {
 		background-color: rgba(25, 25, 25, 0.9);
+	}
 
+
+
+/* FORM */
+
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 90%;
+		
 	}
 
 }
 
+
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
 	
+	h2 {
+		margin-top: 30px;
+	}
+
+/* LAYOUT */
+
 	.container {
-		/*background-color: #121214;*/
 		height: auto;
-		background: url('../images/dark_wall.png');
 		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 	}
 	
+	.column-b {
+		display: none;
+	}
+
+
+	.column-b-mobile {
+		width: 100%;
+		margin: 0 auto;
+		display: inline-block;
+	}
+
+/* HEADER */
+
 	.heading {
 		display: block;
 		height: 10%;
@@ -236,16 +283,15 @@ textarea {
 	}
 
 	header {
-		background-color: rgba(25, 25, 25, 0.7);
+		background-color: rgba(25, 25, 25, 0.9);
 	}
 
 	.title-mobile-front {
 		top: 60%;
 	}
 	
-	h2 {
-		margin-top: 30px;
-	}
+/* MOBILE NAVIGATION */
+	
 	#mobnav ul {
 		width: 100%;
 		display: block;
@@ -264,13 +310,7 @@ textarea {
 		border-left: 1px solid #141414;;
 	}
 
-	.follow {
-		display: none;
-	}
-
-	.follow-mobile {
-		display: block;
-	}
+/* FOOTER */
 
 	footer.sticky {
 		height: 15%;
@@ -279,16 +319,30 @@ textarea {
 
 	footer.fixed {
 		height: 15%;
-		background-color: rgba(25, 25, 25, 0.7);
+		background-color: rgba(25, 25, 25, 0.9);
 	}
 
+	/* ABOUT SIMON */
+
+	.thumbnail-1,
+	.thumbnail-2 {
+		padding: 4px;
+		display: inline-block;
+		float: left;
+		width: 48%;
+		height: auto;
+	}
+
+	.thumbnail-3 {
+		display: none;
+	}
 
 }
 
 
 /* Landscape mode larger than smart phone */
 @media (orientation:landscape) and (min-width: 768px){
-	/* GENERAL */
+/* GENERAL */
 
 	html {
 		background: none;
@@ -299,14 +353,42 @@ textarea {
 		height: 100%;
 	}
 
+/* LAYOUT */
+
 	.container {
-		/*background-color: #121214;*/
-		height: auto;
-		background: url('../images/dark_wall.png');
+		height: 100%;
+		min-height: 100%;
+		height: auto !important;
+		margin: 0 auto -10%;
 		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 	}
 
-	/* HEADER */
+	.content {
+		padding-top: 45px;
+		width: 80%;
+		display: block;
+	}
+
+	.column-a {
+		display: inline-block;
+	 	width: 66%;
+		height: auto;
+		float: left;
+		padding-bottom: 15%;
+	}
+
+	.column-b {
+		display: inline-block;
+		width: 32%;
+		float: left;
+	}
+
+	.column-b-mobile {
+		display: none;
+	}
+
+
+/* HEADER */
 
 	.heading {
 		display: block;
@@ -317,7 +399,7 @@ textarea {
 	header {
 		height: 10%;
 		min-height: 65px;
-		background-color: rgba(25, 25, 25, 0.7);
+		background-color: rgba(25, 25, 25, 0.9); /* 0.7 */
 	}
 	
 	.title-desktop {
@@ -328,7 +410,9 @@ textarea {
 	h1 {
 		text-align: right;
 		padding: 30px 10px 0 0;
+		color: #b2aea5;
 	}
+
 	h1::first-letter {
 		font-size: 1.025em;
 	}
@@ -340,7 +424,7 @@ textarea {
 
 	
 
-	/* DESKTOP NAVIGATION */
+/* DESKTOP NAVIGATION */
 	
 	.mobile-nav {
 		display: none;
@@ -395,8 +479,7 @@ textarea {
 	    color: #b2aea5;
 	    font-size: 1.1em;
 	    text-align: right;
-	    padding: 15px 0 15px 0;
-	    
+	    padding: 15px 0 15px 0;	    
 	}
 
 	nav a {
@@ -426,18 +509,27 @@ textarea {
 	}
 
 
-	.main-content {
-		top: 10%;
-		height: 80%;
+/* FOOTER */
+
+	.social-media {
+		padding-top: 5px;
 	}
 
-	.main {
-		top: 10%;
-		padding-bottom: 10%;
+	.social-icon {
+		padding: 5px;
+	}
+
+	.copyright {
+		padding-top: 5px;
+	}
+
+	footer.fixed {
+		background-color: rgba(25, 25, 25, 0.9); /* 0.7 */
+
 	}
 
 
-	/* FRONT PAGE IMAGE */
+/* FRONT PAGE IMAGE */
 
 	.landscape-main-content {
 		display: table;
@@ -453,62 +545,34 @@ textarea {
 	.centred img {
 		width: 100%;
 	    height: auto;
-
 	}
 
 
-	/* FORM */
+/* FORM */
 
-.contact-container {
-	width: 80%;
-	display: table;
-}
 
-.contact-form {
-	display: inline-block;
- 	width: 66%;
-	height: auto;
-	float: left;
-	padding-bottom: 15%;
-}
-
-.follow {
-	display: inline-block;
-	width: 32%;
-	float: left;
-	position: absolute;
-	top: 50%;
-}
-
-.follow-mobile {
-	display: none;
-}
-
-input[type=text],
-input[type=email],
-textarea {
-	width: 75%;
-	background-color: #bbb;
-}
-
-	/* FOOTER */
-
-	.social-media {
-		padding-top: 5px;
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 75%;
+		background-color: #bbb;
 	}
 
-	.social-icon {
-		padding: 5px;
+	.icons {
+		position: absolute;
+		top: 40%;
 	}
 
-	.copyright {
-		padding-top: 5px;
+/* ABOUT SIMON */
+
+	.about-page-image {
+		margin: 0 auto;
+		width: 90%;
+		display: block;
+
+
 	}
 
-	footer.fixed {
-		background-color: rgba(25, 25, 25, 0.7);
-
-	}
 }
 
 
@@ -523,5 +587,34 @@ textarea {
 		font-size: 2em;
 	}
 }
+/* Show 3 thumbnails on About Simon page on screens > 768px and < 1024px */ 
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	.column-a {
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		height: auto;
+		padding-bottom: 15%;
+	}
+	.column-b {
+			display: none;
+		}
+	.column-b-mobile {
+		width: 100%;
+		margin: 0 auto;
+		display: inline-block;
+	}
+	
 
+	.thumbnail-1,
+	.thumbnail-2,
+	.thumbnail-3 {
+		padding: 4px;
+		display: inline-block;
+		float: left;
+		width: 32%;
+		height: auto;
+	}
+}
 

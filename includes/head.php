@@ -6,9 +6,9 @@
 			<link rel="stylesheet" href="/photos/styles/mediaqueries.css">
 			<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One|Quicksand:300,400|Cinzel:400,700,900|Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
 			
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 			<script type='text/javascript' src='http://rebeccacordingley.com/photography/js/menu_jquery.js'></script>
 
-			<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+			<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script><![endif]-->
 		</head>
 		<body>

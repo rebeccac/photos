@@ -21,8 +21,8 @@ a {
 header,
 footer,
 .container,
-.main-content,
-.container {
+.main-content
+{
 	width: 100%;
 
 }
@@ -35,10 +35,23 @@ footer,
 }
 
 .container {
-	/*background-color: #121214;*/
+	min-height: 100%;
+	height: auto !important;
+	height: auto;
+	margin: 0 auto -10%;
+	background-color: #;
 	height: auto;
 	background: url('../images/dark_wall.png');
+	background-color: #121214;
 	/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
+	}
+
+.content {
+	margin: 0 auto;
+	height: auto;
+	padding-top: 20px;
+	display: block;
+
 }
 
 /* ICON FONTS */
@@ -170,17 +183,14 @@ h2 {
 	color: #636363;
 }
 
-
-
-/* FORM */
-
-.contact-container {
-	margin: 0 auto;
-	height: auto;
-	padding-top: 20px;
-	display: block;
-
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.1em;
+	color: #636363;
 }
+
+
+/* CONTACT PAGE FORM */
 
 form {
 	margin-top: 20px;
@@ -231,7 +241,7 @@ input[type=submit] {
 	margin: 0 auto;
 	display: block;
 }
-
+/* Styling input placeholder text requires separate polyfills for each browser */
 ::-webkit-input-placeholder { /* WebKit browsers */
 	color: #444;
 }
@@ -245,20 +255,26 @@ input[type=submit] {
 	color: #444;
 }
 
+
 li.details {
 	padding: 10px 0;
 }
 
 .errors {
     display:block;
-    color: #ff0000;
-    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    color: #ff6347;
+    font-weight: 400;
 }
 
 .required {
 	color: #ff6347;
 	display: inline;
 }
+
+
+/* CONTACT PAGE FOLLOW ICONS */
 
 .icons {
 	width: 230px;
@@ -295,6 +311,14 @@ li.details {
 
 .s-i-g-p { /* google plus icon */
 	background-color: #d14836;
+}
+
+/* ABOUT SIMON */
+
+.simon p {
+	color: #b2aea5;
+	line-height: 1.4em;
+	margin-bottom: 15px;
 }
 
 /* FOOTER */
@@ -353,16 +377,10 @@ footer p {
 
 	/* STICKY FOOTER */
 
-	.container {
-		min-height: 100%;
-		height: auto !important;
-		height: auto;
-		margin: 0 auto -10%;
-		background-color: #;
-	}
 
 	footer, .push {
 		height: 10%;
+		display: block;
 	}
 
 	footer.sticky {
@@ -370,8 +388,8 @@ footer p {
 	}
 
 	.push {
-		background-color: #121214;
 		background: url('../images/dark_wall.png');
+		background-color: #121214;
 		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 
 	}

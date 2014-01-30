@@ -160,4 +160,40 @@ function get_user_data($userdata) {
 	return $errors;
 }
 
+
+function post_form_data() {
+	$errors = get_user_data($_POST);
+
+	if (isset($_POST['submitBtn'])) {
+	    
+	    $email_to = "beccord@iinet.net.au";
+	    $email_subject = "Simon Cordingley Photography";
+	    if (count($errors) == 0) { ?>
+	      <div class="content">
+	        <div class="column-a"><p>Thank you for your feedback</p></div>
+	        <div class="column-b"></div>
+	      </div>
+	      </div> <!-- .content -->
+
+	    </div>
+	<?php include($root.'includes/footer.php'); 
+
+	      $name = htmlentities($_POST['name']);
+	      $email = htmlentities($_POST['email']);
+	      $comments = htmlentities($_POST['comments']);
+	        
+	      $email_message = "Form details below.\n\n";
+	      $email_message .= "Name: ".$name."\n\n";
+	      $email_message .= "Email: ".$email."\n\n";
+	      $email_message .= "Comments: ".$comments."\n\n";
+
+	      $headers = 'From: '.$email."\r\n".
+	      'Reply-To: '.$email."\r\n" .
+	      'X-Mailer: PHP/' . phpversion();
+	      mail($email_to, $email_subject, $email_message, $headers);  
+	      exit();
+	    } 
+	}
+}
+
 ?>
