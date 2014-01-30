@@ -54,6 +54,10 @@ footer,
 
 }
 
+.text-block {
+	margin-top: 20px;
+}
+
 /* ICON FONTS */
 
 @font-face {
@@ -351,8 +355,6 @@ footer p {
 	font-size: 1em;
 	color: #b2aea5;
 	text-align: center;
-	/*background-color: rgba(25, 25, 25, 1);*/
-
 }
 
 	/* FIXED FOOTER */

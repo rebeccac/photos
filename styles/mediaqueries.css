@@ -92,7 +92,6 @@
 		padding-top: 5px;
 		width: 100%;
 		color: #333;
-
 	}
 
 	#fittext-title-top {
@@ -242,8 +241,7 @@
 	input[type=text],
 	input[type=email],
 	textarea {
-		width: 90%;
-		
+		width: 90%;	
 	}
 
 }
@@ -603,7 +601,7 @@
 	.column-b-mobile {
 		width: 100%;
 		margin: 0 auto;
-		display: inline-block;
+		display: block;
 	}
 	
 
@@ -615,6 +613,10 @@
 		float: left;
 		width: 32%;
 		height: auto;
+	}
+
+	.icons {
+		position: relative;
 	}
 }
 
