@@ -61,9 +61,9 @@
 <div class="mobile-nav">
 	<nav id='mobnav'>
 	    <div id="pull">
-	        <div class="pullitem">&#9776; <!-- Menu -->
+	        <span class="pullitem-menu-symbol">&#9776; </span><span class="pullitem-text">Menu</span>
 	            <!-- <span aria-hidden="true" data-icon="n">&nbsp;&nbsp;Menu</span> <span class="screen-reader-text">Menu</span> -->
-	        </div>
+	        
 	    </div>
 	    <ul>
 	        <li class="has-sub">

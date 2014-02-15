@@ -142,7 +142,8 @@
 		position:relative;
 	}
 
-	.pullitem, 
+	.pullitem-menu-symbol,
+	.pullitem-text, 
 	#pull a {
 		font-weight:600;
 		text-decoration:none;
@@ -150,8 +151,12 @@
 		color: #b2aea5;
 	}
 
-	.pullitem {
+	.pullitem-menu-symbol {
 		font-size: 1.7em;
+	}
+
+	.pullitem-text {
+		font-size: 1.1em;
 	}
 
 	#pull .left {
@@ -252,6 +257,10 @@
 	
 	h2 {
 		margin-top: 30px;
+	}
+
+	.text-block p {
+		font-size: 0.9em;
 	}
 
 /* LAYOUT */

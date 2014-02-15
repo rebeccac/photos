@@ -19,7 +19,7 @@ include($root.'includes/header.php');
 	<div class="content">
 		<div class="column-b-mobile">
 			<div class="thumbnail-1"><img src="images/flora_h_600.jpg" width="100%" height="auto"></div>
-			<div class="thumbnail-2"><img src="images/boat_600.jpg" width="100%" height="auto"></div>
+			<div class="thumbnail-2"><img src="images/abandoned_building_600.jpg" width="100%" height="auto"></div>
 			<div class="thumbnail-3"><img src="images/boat_600.jpg" width="100%" height="auto"></div>
 
 		</div>
