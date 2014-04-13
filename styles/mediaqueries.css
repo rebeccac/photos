@@ -1,4 +1,4 @@
-/* Show 2 thumbnails on About Simon page on screens > 479px in portrait orientation */ 
+/* Show 2 thumbnails on About Simon page on screens > 479px in portrait orientation */
 @media (orientation: portrait) and (min-width: 480px) {
 	.thumbnail-1,
 	.thumbnail-2 {
@@ -14,7 +14,7 @@
 	}
 }
 
-/* Show 1 thumbnail on About Simon page on screens < 479px in portrait orientation */ 
+/* Show 1 thumbnail on About Simon page on screens < 479px in portrait orientation */
 @media (orientation: portrait) and (max-width: 479px) {
 	.thumbnail-1 {
 		padding: 2%;
@@ -68,7 +68,7 @@
 		display: none;
 	}
 
-	
+
 /* HEADER */
 
 	.heading {
@@ -120,7 +120,7 @@
 	}
 
 /* MOBILE NAVIGATION */
-	
+
 	.desktop-nav {
 		display: none;
 	}
@@ -143,7 +143,7 @@
 	}
 
 	.pullitem-menu-symbol,
-	.pullitem-text, 
+	.pullitem-text,
 	#pull a {
 		font-weight:600;
 		text-decoration:none;
@@ -246,7 +246,7 @@
 	input[type=text],
 	input[type=email],
 	textarea {
-		width: 90%;	
+		width: 90%;
 	}
 
 }
@@ -254,13 +254,13 @@
 
 /* Smart phone in landscape mode */
 @media (orientation: landscape) and (min-width: 480px) and (max-width: 767px) {
-	
+
 	h2 {
 		margin-top: 30px;
 	}
 
 	.text-block p {
-		font-size: 0.9em;
+		font-size: 0.8em;
 	}
 
 /* LAYOUT */
@@ -269,7 +269,7 @@
 		height: auto;
 		/* Credit: Dark Wall background image is from Subtle Patterns: http://subtlepatterns.com */
 	}
-	
+
 	.column-b {
 		display: none;
 	}
@@ -296,9 +296,9 @@
 	.title-mobile-front {
 		top: 60%;
 	}
-	
+
 /* MOBILE NAVIGATION */
-	
+
 	#mobnav ul {
 		width: 100%;
 		display: block;
@@ -408,7 +408,7 @@
 		min-height: 65px;
 		background-color: rgba(25, 25, 25, 0.9); /* 0.7 */
 	}
-	
+
 	.title-desktop {
 		display: inline;
 		background-color: #191919;
@@ -429,10 +429,10 @@
 		display: none;
 	}
 
-	
+
 
 /* DESKTOP NAVIGATION */
-	
+
 	.mobile-nav {
 		display: none;
 	}
@@ -447,7 +447,7 @@
 	}
 
 	.hidden-menu {
-		background-image:url('../images/nav.png'); 
+		background-image:url('../images/nav.png');
 		height: auto;
 		display: none;
 		width: 170px;
@@ -486,7 +486,7 @@
 	    color: #b2aea5;
 	    font-size: 1.1em;
 	    text-align: right;
-	    padding: 15px 0 15px 0;	    
+	    padding: 15px 0 15px 0;
 	}
 
 	nav a {
@@ -502,9 +502,9 @@
 		visibility: hidden;
 	}
 
-	/* 
-	when hovering over .menuitem element, if adjacent element is 
-	#simon-border (etc), make border visible. CSS sibling selectors. 
+	/*
+	when hovering over .menuitem element, if adjacent element is
+	#simon-border (etc), make border visible. CSS sibling selectors.
 	*/
 	.menuitem:hover + .home-border,
 	.menuitem:hover + .simon-border,
@@ -594,9 +594,9 @@
 		font-size: 2em;
 	}
 }
-/* Show 3 thumbnails on About Simon page on screens > 768px and < 1024px */ 
+/* Show 3 thumbnails on About Simon page on screens > 768px and < 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
-	
+
 	.column-a {
 		width: 100%;
 		margin: 0 auto;
@@ -612,7 +612,7 @@
 		margin: 0 auto;
 		display: block;
 	}
-	
+
 
 	.thumbnail-1,
 	.thumbnail-2,
@@ -628,4 +628,3 @@
 		position: relative;
 	}
 }
-

@@ -1,7 +1,7 @@
 <?php
- require '/Applications/XAMPP/xamppfiles/htdocs/config/config.php'; # development path
+ //require '/Applications/XAMPP/xamppfiles/htdocs/config/config.php'; # development path
 
-// require($_SERVER[DOCUMENT_ROOT]."/../config.php"); # production path
+require($_SERVER[DOCUMENT_ROOT]."/../../config.php"); # production path
 
 /* Connect to database */
 function connect($config) {
@@ -11,14 +11,14 @@ function connect($config) {
 						$config['DB_PASSWORD']);
 		$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		return $conn;
-	} 
+	}
 	catch(Exception $e) {
 		return false;
 	}
 }
 
-/* 
-Returns all rows from $tableName and checks that table is not empty. 
+/*
+Returns all rows from $tableName and checks that table is not empty.
 If $tableName does not exist or is empty, returns false.
 */
 function getAllRows($tableName, $conn) {
@@ -32,7 +32,7 @@ function getAllRows($tableName, $conn) {
 }
 
 /*
-Dynamically query database. 
+Dynamically query database.
 $query: MySQL query
 $bindings: values to bind to query
 */
@@ -46,7 +46,7 @@ function queryDB($query, $bindings, $conn) {
 
 
 /*
-Insert values into database. 
+Insert values into database.
 $query: MySQL query
 $bindings: values to bind to query
 */
@@ -64,7 +64,7 @@ function deleteValuesDB($query, $bindings, $conn) {
 
 
 /*
-Selects a random record from the given table and returns its filename and alt text in an 
+Selects a random record from the given table and returns its filename and alt text in an
 array. If the table is empty, returns a default image stored outside the table's photo directory.
 */
 function randomImage($orientation, $conn) {
@@ -90,7 +90,7 @@ function randomImage($orientation, $conn) {
 						'alttext' => "The Ruination of Katariina" );
 	        	break;
 			}
-		}	
+		}
 		return $randomImage;
 	}
 	else die("Error");
@@ -103,14 +103,14 @@ function displayImages($orientation, $conn) {
 	if (in_array($orientation, $allowedOrientations)) {
 		$images = queryDB("SELECT * FROM photo WHERE orientation = :orientation",
 							array('orientation' => $orientation), $conn);
-		if ( $images ) { 
-			foreach ( $images as $image ) {  ?>	
+		if ( $images ) {
+			foreach ( $images as $image ) {  ?>
 				<div class="thumbnail">
 					<img src="<?= "../images/frontpage/{$orientation}/{$image->filename}" ?>" width="200px" alt="<?= $image->alt_text?>">
-					<br>				
+					<br>
  					<input type="checkbox" name="deleteImages[]" value="<?php echo $image->filename.":".$orientation ?>"><p class="admin">Delete photo</p>
- 				</div> 
-			<?php	
+ 				</div>
+			<?php
 	    	}
 		} else { ?>
 			<div class="emptyDirectory">No <?php echo $orientation; ?> images available. The default image will be used for <?php echo $orientation; ?> orientation.</div>
@@ -165,23 +165,33 @@ function post_form_data() {
 	$errors = get_user_data($_POST);
 
 	if (isset($_POST['submitBtn'])) {
-	    
-	    $email_to = "beccord@iinet.net.au";
+
+	    $email_to = "spcordingley@gmail.com";
 	    $email_subject = "Simon Cordingley Photography";
 	    if (count($errors) == 0) { ?>
 	      <div class="content">
-	        <div class="column-a"><p>Thank you for your feedback</p></div>
+	        <div class="column-a">
+            <p>Thank you for your feedback</p>
+              <br>
+            <div class="feedback">
+              <p><strong>Name: </strong><?= $_POST['name']; ?></p>
+              <p><strong>Email: </strong><?= $_POST['email']; ?></p>
+              <p><strong>Comments: </strong><?= $_POST['comments']; ?></p>
+            </div>
+          </p>
+
+          </div>
 	        <div class="column-b"></div>
 	      </div>
 	      </div> <!-- .content -->
 
 	    </div>
-	<?php include($root.'includes/footer.php'); 
+	<?php include($root.'includes/footer.php');
 
 	      $name = htmlentities($_POST['name']);
 	      $email = htmlentities($_POST['email']);
 	      $comments = htmlentities($_POST['comments']);
-	        
+
 	      $email_message = "Form details below.\n\n";
 	      $email_message .= "Name: ".$name."\n\n";
 	      $email_message .= "Email: ".$email."\n\n";
@@ -190,9 +200,10 @@ function post_form_data() {
 	      $headers = 'From: '.$email."\r\n".
 	      'Reply-To: '.$email."\r\n" .
 	      'X-Mailer: PHP/' . phpversion();
-	      mail($email_to, $email_subject, $email_message, $headers);  
+	      mail($email_to, $email_subject, $email_message, $headers);
 	      exit();
-	    } 
+        $_POST = array();
+	    }
 	}
 }
 

@@ -3,7 +3,7 @@
 		<nav>
 			<div id="menu">
 				<ul>
-					
+
 					<li>
 							<div class="menuitem"></div>
 					</li>
@@ -23,28 +23,28 @@
 						</a>
 					</li>
 					<li>
-						<a href="store.php">
+						<a href="http://darkroom.simoncordingleyphotography.com/store/">
 							<div class="menuitem">Store</div>
 							<div class="store-border"></div>
 						</a>
 					</li>
 					<li>
-						<a href="gallery.php">
+						<a href="http://darkroom.simoncordingleyphotography.com/portfolio/">
 							<div class="menuitem">Gallery</div>
 							<div class="gallery-border"></div>
 						</a>
 					</li>
 					<li>
-						<a href="creative-commons.php">
+						<a href="#">
 							<div class="menuitem">Creative Commons</div>
 							<div class="creative-commons-border"></div>
-						</a>	
+						</a>
 					</li>
 					<li>
 						<a href="contact.php">
 							<div class="menuitem">Contact</div>
 							<div class="contact-border"></div>
-						</a>		
+						</a>
 					</li>
 					<li>
 							<div class="menuitem"></div>
@@ -63,7 +63,7 @@
 	    <div id="pull">
 	        <span class="pullitem-menu-symbol">&#9776; </span><span class="pullitem-text">Menu</span>
 	            <!-- <span aria-hidden="true" data-icon="n">&nbsp;&nbsp;Menu</span> <span class="screen-reader-text">Menu</span> -->
-	        
+
 	    </div>
 	    <ul>
 	        <li class="has-sub">
@@ -73,10 +73,10 @@
 	            <a href='simon.php'><span>Simon</span></a>
 	        </li>
 	        <li class="has-sub">
-	            <a href="#"><span>Store</span></a>
+	            <a href="http://darkroom.simoncordingleyphotography.com/store/"><span>Store</span></a>
 	        </li>
 	        <li class="has-sub">
-	            <a href="#"><span>Gallery</span></a>
+	            <a href="http://darkroom.simoncordingleyphotography.com/portfolio/"><span>Gallery</span></a>
 	        </li>
 	        <li class="has_sub">
 	            <a href="#"><span>Creative Commons</span></a>
@@ -85,6 +85,6 @@
 	            <a href="contact.php"><span>Contact</span></a>
 	        </li>
 	    </ul>
-	    
+
 	</nav>
 </div>

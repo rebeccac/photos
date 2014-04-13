@@ -1,3 +1,10 @@
+// click only on #menu-tag to toggle #hidden-menu
+$(document).ready(function() {
+	$('#menu-tag').click(function() {
+		$('#hidden-menu').slideToggle('slow');
+	});
+});
+
 $(document).ready(function(){
 
 $('#mobnav > ul > li > a').click(function() {
@@ -22,10 +29,10 @@ $('#mobnav > ul > li > a').click(function() {
 });
 
  $(function() {
-         var pull       = $('#pull');
-            menu     = $('#mobnav > ul');
+         var pull = $('#pull');
+            menu = $('#mobnav > ul');
             $(menu).on('load').hide();
-            menuHeight  = menu.height();
+            menuHeight = menu.height();
          $(pull).on('click', function(e) {
             e.preventDefault();
             menu.slideToggle();
